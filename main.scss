@@ -1,0 +1,10 @@
+@use "@material/button/mdc-button";
+@use "@material/button";
+
+@use "@material/card";
+
+@include card.core-styles;
+
+body {
+    background-color: #eceff1;
+}
