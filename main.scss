@@ -8,3 +8,48 @@
 body {
     background-color: #eceff1;
 }
+
+.container {
+    margin: 0px auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.left {
+    background-color: blue;
+    width: calc(40% - 4px);
+}
+
+.right {
+    background-color: green;
+    width: calc(60% - 4px);
+}
+
+@media screen and (max-width: 800px) {
+    .column.left,
+    .column.right {
+        width: 100%;
+    }
+
+    .column.left {
+        margin-bottom: 8px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1000px;
+    }
+}
