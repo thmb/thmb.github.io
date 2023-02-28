@@ -1,213 +1,268 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <link rel="stylesheet" href="main.min.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Thiago Madureira Braga</title>
         <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-            rel="stylesheet" />
-
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous" />
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="custom.css" />
     </head>
-
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="column left">
-                    <div class="mdc-card">
-                        <img src="images/thiago-2018.jpg" alt="Thiago Madureira Braga" />
-                        <div class="socials">
-                            <a href="https://www.linkedin.com/in/thmb" target="_blank">
-                                <div class="social">
-                                    <i class="bi bi-linkedin"></i><span>thmb</span>
-                                </div>
-                            </a>
-                            <a href="https://github.com/thmb" target="_blank">
-                                <div class="social">
-                                    <i class="bi bi-github"></i><span>thmb</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="mdc-card card dark">
+    <body class="bg-grey-50">
+        <nav class="navbar navbar-expand-lg sticky-top py-0 bg-grey-50">
+            <div class="container-lg bg-blue px-4 py-3">
+                <a class="navbar-brand fs-4 text-light" href="#">THIAGO MADUREIRA BRAGA</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav me-2">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">SKILLS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">EXPERIENCE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">EDUCATION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">POSTS</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex flex-column flex-lg-row">
                         <div>
-                            <h2>THIAGO MADUREIRA BRAGA</h2>
-                            <h3 class="title">Senior Software Engineer | Professor</h3>
+                            <button class="btn btn-sm btn-outline-light me-lg-3">
+                                <i class="bi bi-linkedin me-1"></i>
+                                <span>thmb</span>
+                                <!-- <span class="badge text-bg-secondary">292</span> -->
+                            </button>
                         </div>
-                        <div class="badges">
-                            <div class="badge">Portuguese | C2</div>
-                            <div class="badge">English | C1</div>
-                            <div class="badge">Spanish | B2</div>
-                        </div>
-                        <div class="contacts">
-                            <div class="contact">
-                                <i class="bi bi-envelope"></i>
-                                <span>thiagomadureirabraga@gmail.com</span>
-                            </div>
-                            <div class="contact">
-                                <i class="bi bi-geo-alt"></i>
-                                <span>Barcelona, Catalonia, Spain</span>
-                            </div>
-                            <div class="contact">
-                                <i class="bi bi-whatsapp"></i>
-                                <span>+34 677 470 860</span>
-                            </div>
+                        <div>
+                            <button class="btn btn-sm btn-outline-light mt-3 mt-lg-0">
+                                <i class="bi bi-github me-1"></i>
+                                <span>thmb</span>
+                            </button>
                         </div>
                     </div>
-                    <div class="mdc-card card dark">
-                        <h3>PROFILE</h3>
-                        <p>
-                            I am looking for opportunities to collaborate in projects involving data
-                            science and software development, with special interest in math
-                            techniques and crypto assets. I have been working with data pipelines
-                            and web development for the past 15 years, while interacting with
-                            startups, enterprises and government. Currently, I'm working as senior
-                            software engineer in remote projects worldwide. My expertise and
-                            interests includes artificial intelligence, big data analytics, agile
-                            software development and blockchain platforms.
-                        </p>
-                    </div>
-                    <div class="mdc-card card dark">
-                        <h3>SKILLS</h3>
-                        <div class="badges">
-                            <div class="badge">Python</div>
-                            <div class="badge">Java | EE</div>
-                            <div class="badge">C/C++</div>
-                            <div class="badge">SQL</div>
-                            <div class="badge">TypeScript</div>
-                            <div class="badge">HTML</div>
-                            <div class="badge">CSS</div>
-                            <div class="badge">Shell</div>
-                        </div>
-                        <div class="badges">
-                            <div class="badge">Numpy</div>
-                            <div class="badge">Pandas</div>
-                            <div class="badge">SciPy</div>
-                            <div class="badge">Matplotlib</div>
-                            <div class="badge">Airflow</div>
-                            <div class="badge">Airbyte</div>
-                            <div class="badge">DBT</div>
-                            <div class="badge">Kafka</div>
-                            <div class="badge">Spark</div>
-                            <div class="badge">PostgreSQL</div>
-                            <div class="badge">MongoDB</div>
-                            <div class="badge">Redis</div>
-                            <div class="badge">Elastic</div>
-                            <div class="badge">Angular</div>
-                            <div class="badge">NestJS</div>
-                            <div class="badge">Git</div>
-                            <div class="badge">CI/CD</div>
-                            <div class="badge">Docker</div>
-                        </div>
-                        <div class="badges">
-                            <div class="badge">Google Cloud</div>
-                            <div class="badge">AWS</div>
-                            <div class="badge">Azure</div>
-                            <div class="badge">DigitalOcean</div>
-                        </div>
-                    </div>
-
-                    <!-- <div class="mdc-card card dark">
-                        <h3>HOBBIES</h3>
-                        <div class="badges">
-                            <div class="badge">Aviation | Sport Pilot</div>
-                            <div class="badge">Music | Dance Entusiast</div>
-                        </div>
-                    </div> -->
                 </div>
-                <div class="column right">
-                    <div class="mdc-card card light">
-                        <h3>EXPERIENCE</h3>
-                        <div>
-                            <h4>Software Engineer (Founder)</h4>
-                            <h4>THAU | Brazil | Dec 2017 - Present</h4>
-                            <ul>
-                                <li>
-                                    Imoiê: scale up a REST application built in Python that uses
-                                    machine learning to predict and reduce school dropout based on
-                                    class attendance and delays. [imoie.com.br]
-                                </li>
-                                <li>
-                                    State of Minas Gerais Education Secretary: lead a team of 7
-                                    people programming in Java (EE), SQL Server and CI/CD to
-                                    implement a capacity management app, an online enrollment system
-                                    for 1.8M students and a school staff timetable.
-                                    [educacao.mg.gov.br]
-                                </li>
-                                <li>
-                                    netLex: consultancy and training to improve technology (C/C++,
-                                    Angular and MySQL) to streamline legal documents formalization
-                                    and management processes enabling to extract relevant data and
-                                    create intelligence. [netlex.io]
-                                </li>
-                            </ol>
+            </div>
+        </nav>
+
+        <div class="container-lg">
+            <div class="row align-items-center bg-blue text-light mt-2">
+                <div class="col-2 p-4">
+                    <img
+                        src="images/thiago-2018.jpg"
+                        alt="Thiago Madureira Braga"
+                        class="img-fluid rounded-circle" />
+                </div>
+                <div class="col-5 p-4">
+                    <div>
+                        <!-- <h2>THIAGO MADUREIRA BRAGA</h2> -->
+                        <h4 class="muted">MSc Software Engineer | Professor</h4>
+                    </div>
+                    <div class="mb-2">
+                        <span class="badge rounded-pill text-bg-light me-2">Portuguese | C2</span>
+                        <span class="badge rounded-pill text-bg-light me-2">English | C1</span>
+                        <span class="badge rounded-pill text-bg-light">Spanish | B2</span>
+                    </div>
+                    <div class="contacts">
+                        <div class="contact">
+                            <i class="bi bi-envelope me-1"></i>
+                            <span>thiagomadureirabraga@gmail.com</span>
                         </div>
-                        <div>
-                            <h4>Professor & Program Content Assistant</h4>
-                            <h4>Una | Brazil | Jan 2015 - Dec 2017</h4>
-                            <ul>
-                                <li>
-                                    Industrial Control Process course using Python and MATLAB to model sensors and actuators and tune PID controllers.
-                                </li>
-                                <li>
-                                    Processor and Peripheral Systems course exploring x86 and ARM architectures and also Arduino devices with their modules.
-                                </li>
-                                <li>
-                                    Industrial Automation Networks course and topics in scientific programming with Python and temporal series datasets.
-                                </li>
-                            </ol>
+                        <div class="contact">
+                            <i class="bi bi-geo-alt me-1"></i>
+                            <span>Barcelona, Catalonia, Spain</span>
                         </div>
-                        <div>
-                            <h4>Software Engineer (Co-Founder)</h4>
-                            <h4>LinkSaúde | Brazil | Sep 2011 - Dec 2017</h4>
-                            <ul>
-                                <li>
-                                    Online clinical information app built with Angular, NestJS, and MongoDB using async/await routines and AWS integrations.
-                                </li>
-                                <li>
-                                    Initial version built using Cassandra in a GCP cluster as a database with later migration to MongoDB using Apache Airflow.
-                                </li>
-                            </ol>
-                        </div>
-                        <div>
-                            <h4>Software Engineer (Full Stack)</h4>
-                            <h4>Acute Technological Services | USA | Dez 2007 - Aug 2011</h4>
-                            <ul>
-                                <li>
-                                    Design and implementation using Spring and PostgreSQL of an online personnel timesheet for non-stop industrial fields.
-                                </li>
-                                <li>
-                                    Design, development and operation of a weld data system to manage the construction of a pipeline that interconnected the states of Texas, Oklahoma and Kansas.
-                                </li>
-                            </ol>
+                        <div class="contact">
+                            <i class="bi bi-whatsapp"></i>
+                            <span>+34 677 470 860</span>
                         </div>
                     </div>
-                    <div class="mdc-card card light">
-						<h3>EDUCATION</h3>
-                        <div>
-                            <h4>Master's in Electrical Engineering</h4>
-                            <h4>Federal University of Rio de Janeiro | Brazil | Jan 2009 - Aug 2011</h4>
-                            <div class="blockquote">
-								Thesis title: A Text Mining Tool in University Hospital Databases Using Matrix Decompositions
+                </div>
+                <div class="col-5 p-4">
+                    <p class="lead">
+                        I am looking for opportunities to collaborate in projects involving data
+                        science and software development, with special interest in math techniques
+                        and crypto assets. I have been working with data pipelines and web
+                        development for the past 15 years, while interacting with startups,
+                        enterprises and government.
+                    </p>
+                </div>
+            </div>
+            <div class="row bg-grey-100 mt-2">
+                <div class="col-3 p-4">
+                    <h6 class="text-muted">PROGRAMMING LANGUAGES</h6>
+                    <span class="badge rounded-pill bg-blue text-grey-50 m-1">Python</span>
+                    <span class="badge rounded-pill bg-blue text-grey-50 m-1">C/C++</span>
+                    <span class="badge rounded-pill bg-blue text-grey-50 m-1">SQL</span>
+                    <span class="badge rounded-pill bg-blue text-grey-50 m-1">Java | EE</span>
+                    <span class="badge rounded-pill bg-blue text-grey-50 m-1">TypeScript</span>
+                    <span class="badge rounded-pill bg-blue text-grey-50 m-1">HTML</span>
+                    <span class="badge rounded-pill bg-blue text-grey-50 m-1">CSS</span>
+                    <span class="badge rounded-pill bg-blue text-grey-50 m-1">Shell</span>
+                </div>
+                <div class="col-6 p-4">
+                    <h6 class="text-muted">TOOLING AND SOFTWARE</h6>
+                    <span class="badge rounded-pill bg-danger m-1">TensorFlow</span>
+                    <span class="badge rounded-pill bg-danger m-1">PyTorch</span>
+                    <span class="badge rounded-pill bg-blue text-grey-50 m-1">Airflow</span>
+                    <span class="badge rounded-pill bg-warning m-1">Airbyte</span>
+                    <span class="badge rounded-pill bg-warning m-1">DBT</span>
+                    <span class="badge rounded-pill bg-danger m-1">Kafka</span>
+                    <span class="badge rounded-pill bg-danger m-1">Spark</span>
+                    <span class="badge rounded-pill bg-danger m-1">Hadoop</span>
+                    <span class="badge rounded-pill bg-blue text-grey-50 m-1">Docker</span>
+                    <span class="badge rounded-pill bg-blue text-grey-50 m-1">PostgreSQL</span>
+                    <span class="badge rounded-pill bg-blue text-grey-50 m-1">MongoDB</span>
+                    <span class="badge rounded-pill bg-blue text-grey-50 m-1">Redis</span>
+                    <span class="badge rounded-pill bg-warning m-1">Elastic</span>
+                    <span class="badge rounded-pill bg-warning m-1">FastAPI</span>
+                    <span class="badge rounded-pill bg-warning m-1">Vue</span>
+                    <span class="badge rounded-pill bg-blue text-grey-50 m-1">Angular</span>
+                    <span class="badge rounded-pill bg-blue text-grey-50 m-1">NestJS</span>
+                    <span class="badge rounded-pill bg-blue text-grey-50 m-1">Git</span>
+                </div>
+                <div class="col-3 p-4">
+                    <h6 class="text-muted">CLOUD SERVICES</h6>
+                    <span class="badge rounded-pill bg-blue text-grey-50 m-1">Google Cloud</span>
+                    <span class="badge rounded-pill bg-blue text-grey-50 m-1">Amazon</span>
+                    <span class="badge rounded-pill bg-blue text-grey-50 m-1">Azure</span>
+                    <span class="badge rounded-pill bg-blue text-grey-50 m-1">DigitalOcean</span>
+                    <span class="badge rounded-pill bg-warning m-1">Snowflake</span>
+                    <span class="badge rounded-pill bg-blue text-grey-50 m-1">CI/CD</span>
+                </div>
+            </div>
+            <div class="row bg-light mt-2">
+                <div class="col p-4">
+                    <h4>EXPERIENCE</h4>
+                    <ul>
+                        <li>
+                            <div class="row">
+                                <div class="col h5 text-blue">Software Engineer (Founder)</div>
+                                <div class="col h5 text-end text-grey-500">
+                                    THAU @ Brazil | Dec 2017 - Present
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                            <h4>Graduation in Controls And Automation Engineering</h4>
-                            <h4>Federal University of Minas Gerais | Brazil | Jan 2001 - Dec 2005</h4>
-                            <div class="blockquote">
-								Conclusion project: Distributed Instrumentation Network Development Using Controller Area Network
+                            <p class="fw-light">
+                                Imoiê: scale up a REST application built in Python that uses
+                                <span class="text-primary-emphasis fw-bold">machine learning</span>
+                                to predict and reduce school dropout based on class attendance and
+                                delays. [imoie.com.br] State of Minas Gerais Education Secretary:
+                                lead a team of 7 people programming in Java (EE), SQL Server and
+                                CI/CD to implement a capacity management app, an online enrollment
+                                system for 1.8M students and a school staff timetable.
+                                [educacao.mg.gov.br] netLex: consultancy and training to improve
+                                technology (C/C++, Angular and MySQL) to streamline legal documents
+                                formalization and management processes enabling to extract relevant
+                                data and create intelligence. [netlex.io]
+                            </p>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col h5 text-blue">
+                                    Professor & Program Content Assistant
+                                </div>
+                                <div class="col h5 text-end text-grey-500">
+                                    Una @ Brazil | Jan 2015 - Dec 2017
+                                </div>
                             </div>
-                        </div>
-					</div>
+                            <p class="fw-light">
+                                Industrial Control Process course using Python and MATLAB to model
+                                sensors and actuators and tune PID controllers. Processor and
+                                Peripheral Systems course exploring x86 and ARM architectures and
+                                also Arduino devices with their modules. Industrial Automation
+                                Networks course and topics in scientific programming with Python and
+                                temporal series datasets.
+                            </p>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col h5 text-blue">Software Engineer (Co-Founder)</div>
+                                <div class="col h5 text-end text-grey-500">
+                                    LinkSaúde @ Brazil | Sep 2011 - Dec 2017
+                                </div>
+                            </div>
+                            <p class="fw-light">
+                                Online clinical information app built with Angular, NestJS, and
+                                MongoDB using async/await routines and AWS integrations. Initial
+                                version built using Cassandra in a GCP cluster as a database with
+                                later migration to MongoDB using Apache Airflow.
+                            </p>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col h5 text-blue">Software Engineer (Full Stack)</div>
+                                <div class="col h5 text-end text-grey-500">
+                                    Acute Technological Services @ USA | Dez 2007 - Aug 2011
+                                </div>
+                            </div>
+                            <p class="fw-light">
+                                Design and implementation using Spring and PostgreSQL of an online
+                                personnel timesheet for non-stop industrial fields. Design,
+                                development and operation of a weld data system to manage the
+                                construction of a pipeline that interconnected the states of Texas,
+                                Oklahoma and Kansas.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row bg-light mt-2">
+                <div class="col p-4">
+                    <h4>EDUCATION</h4>
+                    <ul>
+                        <li>
+                            <div class="row">
+                                <div class="col h5 text-blue">Master in Electrical Engineering</div>
+                                <div class="col h5 text-end text-grey-500">
+                                    Federal University of Rio de Janeiro @ Brazil | Jan 2009 - Aug
+                                    2011
+                                </div>
+                            </div>
+                            <p class="fw-light">
+                                Thesis title: A Text Mining Tool in University Hospital Databases
+                                Using Matrix Decompositions [netlex.io]
+                            </p>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col h5 text-blue">
+                                    Bachelor in Controls And Automation Engineering
+                                </div>
+                                <div class="col h5 text-end text-grey-500">
+                                    Federal University of Minas Gerais @ Brazil | Jan 2001 - Dec
+                                    2005
+                                </div>
+                            </div>
+                            <p class="fw-light">
+                                Conclusion project: Distributed Instrumentation Network Development
+                                Using Controller Area Network
+                            </p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
 
-        <script src="main.min.js" async></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
     </body>
 </html>
